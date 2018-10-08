@@ -209,12 +209,12 @@ Exemplo de método de callback em C# para receber as atualizações:
 
 Possíveis status para recebimento:
 ID	Status
-1	|   Requested Address - Endereço solicitado. Nada foi transferido ainda.
-2	|   	Waiting Confirmation to WarpWallet - Pagamento efetuado porém ainda não confirmado no Blockchain, aguarde status mudar para 9.
-6	|   	Paid by Warp to Customer - Pago em sua conta bancária
-9	|   	Confirmed on Warp Wallet - Confirmado em nossa Wallet, iremos lhe pagar em até 48h
-11	|   	Payment not made - Pagamento não realizado no prazo sendo analisado (24h).
-12	|   	Paid with less value - WE will refund the owner wallet. Pagamento foi realizado com valor menor do que o solicitado, iremos devolver tudo a quem enviou cobrando a taxa de mineração.
-13	|   	Paid with more value - WE will send you everything and you choose to refund your customer. Seu cliente pagou com valor maior que o devido, pagaremos tudo a você e você caso seja aplicavel lhe retornará em produto/dinheiro/bonus.
-14	|   	Refunded to customer. Pagamos de volta ao cliente o que ele pagou menos a taxa de transação.
+- 1	|   Requested Address - Endereço solicitado. Nada foi transferido ainda.
+- 2	|   	Waiting Confirmation to WarpWallet - Pagamento efetuado porém ainda não confirmado no Blockchain, aguarde status mudar para 9.
+- 6	|   	Paid by Warp to Customer - Pago em sua conta bancária
+- 9	|   	Confirmed on Warp Wallet - Confirmado em nossa Wallet, iremos lhe pagar em até 48h
+- 11	|   	Payment not made - Pagamento não realizado no prazo sendo analisado (24h).
+- 12	|   	Paid with less value - WE will refund the owner wallet. Pagamento foi realizado com valor menor do que o solicitado, iremos devolver tudo a quem enviou cobrando a taxa de mineração.
+- 13	|   	Paid with more value - WE will send you everything and you choose to refund your customer. Seu cliente pagou com valor maior que o devido, pagaremos tudo a você e você caso seja aplicavel lhe retornará em produto/dinheiro/bonus.
+- 14	|   	Refunded to customer. Pagamos de volta ao cliente o que ele pagou menos a taxa de transação.
 
