@@ -1,4 +1,4 @@
-# Warp Exchange Gateway
+﻿# Warp Exchange Gateway
 Documentação criada em 08/10/2018 com objetivo de expor novas funcionalidades aos clientes que estão já estão integrados e a novos clientes.
 
   - Versão: 0.1.1
@@ -168,7 +168,7 @@ Exemplo de método de callback em C# para receber as atualizações:
         [AllowAnonymous]
         public string MerchantTransactions(FormCollection collect)
         {
-            string token = this.HttpContext.Request.Headers["Token"];
+            string token = this.HttpContext.Request.Headers["authorizationToken"];
             if (token == "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...P0LVCem91odPn3MaBxYf4leokkxA")
             {
                 //Transação válida, entretanto, consulte nossa API, no método GetTransactionInformation
@@ -203,7 +203,7 @@ Exemplo de método de callback em C# para receber as atualizações:
                 
                 return WEResp;
             }
-            return "Error - Wrong Status or Token. Token : " + this.HttpContext.Request.Headers["Token"] + " Status: " + collect["StatusID"];   
+            return "Error - Wrong Status or Token. Token : " + this.HttpContext.Request.Headers["authorizationToken"] + " Status: " + collect["StatusID"];   
         }
 ```
 
