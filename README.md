@@ -1,8 +1,16 @@
 ﻿# Warp Exchange Gateway
 Documentação criada em 08/10/2018 com objetivo de expor novas funcionalidades aos clientes que estão já estão integrados e a novos clientes.
 
-  - Versão: 0.1.1
+  - Versão: 1.2.1
 
+
+# Disposição Geral do Serviço em Dois Passos
+
+  ##1. Adicionar à sua pagina de pagamento as chamadas a API da Warp Exchange.
+    - Solicitar o endereço para um pagamento.
+    - Confirmar que o pagamento foi realizado.
+  ##2. Configurar um endereço em seu servidor web para que a Warp Exchange possa se comunicar com você. 
+    - Toda alteração de Status na Warp Exchange será informada ao cliente, para que ele tenha sempre o mesmo Status para todas as transações.
 # Endpoint Principal
 
   - https://api.warpexchange.com (Todos os métodos dispostos a seguir utilizarão esse endpoint)
