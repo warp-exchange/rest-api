@@ -218,10 +218,10 @@ Exemplo de método de callback em C# para receber as atualizações:
 - Possíveis status para recebimento:
 ```sh
 ID	Status
-1	   Pagamento Solicitado
-2	   Aguardando Confirmação na Warp
-6	   Pago pela Warp ao Cliente
-9	   Confirmado na Warp
+1	 Pagamento Solicitado
+2	 Aguardando Confirmação na Warp
+6	 Pago pela Warp ao Cliente
+9	 Confirmado na Warp
 11	 Pagamento não Realizado
 12	 Pago com menor valor*
 13	 Pago com valor maior - Iremos lhe pagar e você escolhe como reverter ao cliente
