@@ -34,8 +34,8 @@ Value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...P0LVCem91odPn3MaBxYf4leokkxA
 ### /getnewaddress
   - Método responsável por retornar um novo endereço a partir do valor e moeda informado na sua requisição. 
   - Esse é o método que deve ser chamado após escolher o preço final no site do merchant. (Pagar com visa, master ou bitcoin? -> pós click no bitcoin).
-  - Esse método deverá ser chamado a cada 5 (dois) minutos no caso de permanencia na tela do cliente. Isso é obrigatório. 
-  - ALTERADO: (Extornaremos o valor diretamente para a carteira que nos enviou caso seja recebido posterior a 3 (três) minutos. (um minuto de margem)) - Não é possivel tal funcionalidade devido aos sistemas de corretoras, principais wallets que trabalharão conosco, não reconhecerem devoluções a seus clientes. Sempre que um cliente pagar menor valor, será enviado a uma carteira de bitcoins da Warp Exchange, que estará preparada para que o cliente final, através da loja que efetuou a compra, envie o endereço para "reembolso".
+  - Esse método deverá ser chamado a cada 5 (cinco) minutos no caso de permanencia na tela do cliente. Isso é obrigatório. 
+  - Sempre que um cliente pagar menor valor, será enviado a uma carteira de bitcoins da Warp Exchange, que estará preparada para que o cliente final, através da loja que efetuou a compra, envie o endereço para "reembolso".
   ##### Nova Funcionalidade:
 - Split de Pagamento: o campo "split" foi adicionado ao método. Esse campo solicita um "MarketPlaceToken" e um percentual, "PercentOf". O MarketPlaceToken, se refere ao recebedor e o percentual, a quanto irá receber em relação àquela venda.
 Para emitir esse MarketPlaceToken, o parceiro do MarketPlace e o próprio deverão acessar a área logada do site e clicar: Perfil > Integração com MarketPlace, e clicar em "Novo Market Place Token".
