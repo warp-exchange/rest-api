@@ -6,7 +6,7 @@ Documentation created on 10/08/2018 with the aim of exposing new functionalities
 
 # Two-Step Service Overview
 
-   ### 1. Add Warp Exchange API calls to your payment page.
+### 1. Add Warp Exchange API calls to your payment page.
      - Request the address for a payment.
      - Confirm that the payment has been made.
 ### 2. Set up an address on your web server so Warp Exchange can communicate with you.
