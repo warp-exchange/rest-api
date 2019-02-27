@@ -13,10 +13,11 @@ Documentation created on 10/08/2018 with the aim of exposing new functionalities
      - Any change of Status in the Warp Exchange will be informed to the client, so that it always has the same Status for all transactions.
 # Main Endpoint
 
-  - https://api.warpexchange.com (All methods below will use this endpoint)
-   - To use the API, you will need to register a Callback URL. Through this URL, we will inform you of updates to your transactions. (see the final part of this document)
-   - All calls will be through the POST method to the addresses.
-   - All requests require the Header:
+- https://api.warpexchange.com (All methods below will use this endpoint)
+- To use the API, you will need to register a Callback URL. Through this URL, we will inform you of updates to your transactions. (see the final part of this document)
+- All calls will be through the POST method to the addresses.
+- All requests require the Header:
+
 ```sh
 Example:
 Key: Content-Type
